@@ -21,21 +21,10 @@ module.exports = {
         use: ["style-loader", "css-loader"], // Handles CSS files
       },
       {
-        test: /\.html$/i,
-        loader: "html-loader", // Processes HTML files
-      },
-      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource", // Handles static assets (e.g., images)
         generator: {
           filename: "images/[name].[contenthash][ext]",
-        },
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
-        generator: {
-          filename: "fonts/[name].[contenthash][ext]",
         },
       },
     ],

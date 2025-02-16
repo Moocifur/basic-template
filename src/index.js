@@ -1,12 +1,8 @@
 // index.js
-import "./styles.css";
-import { greeting } from "./greeting.js";
+import './styles.css';
 
-console.log(greeting);
-
-import odinImage from "./sonic.jpg";
-   
-const image = document.createElement("img");
-image.src = odinImage;
-   
-document.body.appendChild(image);
+// DOM Content Loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Your JavaScript code here
+    console.log('Webpack is working!');
+});
